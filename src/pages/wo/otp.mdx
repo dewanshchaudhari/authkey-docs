@@ -42,8 +42,8 @@ AUTHKEY_SECRET=... # A secret key for your app (starts with authkey_)
 ```
 
 <Callout type="warning">
-  If you don't already have a authkey secret key, [sign up](https://authkey.com/login) and create one from
-  the [dashboard!](https://authkey.com/dashboard)
+  If you don't already have a authkey secret key, [sign up](https://authkey.pro/login) and create one from
+  the [dashboard!](https://authkey.pro/dashboard)
 </Callout>
 </Steps>
 
@@ -56,7 +56,7 @@ AUTHKEY_SECRET=... # A secret key for your app (starts with authkey_)
 ```ts copy filename="src/utils/sendOTP.ts"
 import fetch from "node-fetch";
 
-const url = "https://authkey.com/api/wo/otp";
+const url = "https://authkey.pro/api/wo/otp";
 
 const response = await fetch(url, {
   method: "POST",
