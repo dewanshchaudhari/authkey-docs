@@ -1,0 +1,48 @@
+import { Callout, Steps } from "nextra-theme-docs";
+
+# Getting Started
+
+> These docs assume you're using Node JS - docs for other languages coming
+> soon!
+
+## Package Setup
+
+<Steps>
+
+### Install the packages
+
+import { Tab, Tabs } from "nextra-theme-docs";
+
+{/* prettier-ignore-start */}
+
+<Tabs items={["npm", "yarn", "pnpm"]}>
+  <Tab>
+    ```bash copy
+    npm install node-fetch 
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy 
+    yarn add node-fetch 
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy 
+    pnpm install node-fetch 
+    ```
+  </Tab>
+</Tabs>
+
+{/* prettier-ignore-end */}
+
+### Add env variables
+
+```bash
+AUTHKEY_SECRET=... # A secret key for your app (starts with authkey_)
+```
+
+<Callout type="warning">
+  If you don't already have a authkey secret key, [sign up](https://authkey.com/login) and create one from
+  the [dashboard!](https://authkey.com/dashboard)
+</Callout>
+</Steps>
